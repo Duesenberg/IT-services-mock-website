@@ -1,9 +1,9 @@
+import Navigation from "./assets/components/Navigation";
+
 export default function App () {
   return(
     <div>
-      <h1 className="text-xs text-blue-700">
-        Hello from App
-      </h1>
+      <Navigation />
     </div>
   )
 }
