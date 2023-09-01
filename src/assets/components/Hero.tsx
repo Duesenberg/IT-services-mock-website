@@ -1,14 +1,14 @@
 function Hero() {
   return(
     <section>
-      <div className="relative flex flex-col items-center p-10 gap-8">
+      <div className="relative flex flex-col items-center p-10 gap-8 bg-gray-950 bg-opacity-60">
         {/* Content */}
-        <h1 className="text-white my-8 text-5xl font-bold text-center">The Most Competent IT Staff At Your Disposal</h1>
-        <p className=" text-white  text-xl text-center">
+        <h1 className="text-gray-100 my-8 text-5xl font-bold text-center">The Most Competent IT Staff At Your Disposal</h1>
+        <p className=" text-gray-100  text-xl text-center">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. At quis donec eget tellus turpis imperdiet aenean libero. 
         </p>
         <a href="" 
-        className="text-white p-4 text-l text-center uppercase font-bold bg-gray-500">
+        className="text-gray-100 p-4 text-l text-center uppercase font-bold bg-gray-500 rounded-md hover:bg-gray-400 transition-colors duration-200">
           Contact Us</a>
 
         {/* Background Image */}
