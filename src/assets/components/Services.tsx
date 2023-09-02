@@ -1,9 +1,9 @@
 function Services() {
   return(
     <section>
-      <div className="flex flex-col items-center px-6 py-8 gap-10 bg-gray-900">
-        <div className="flex flex-col items-center gap-2">
-          <span className="uppercase text-center text-sm text-gray-100 font-bold">What we Do</span>
+      <div className="flex flex-col px-6 py-8 gap-10 bg-gray-900">
+        <div className="flex flex-col gap-2">
+          <span className="uppercase text-start text-sm text-gray-100 font-bold">What we Do</span>
           <h2 className="text-4xl text-center text-gray-100 font-bold">IT Services</h2>
         </div>
         
