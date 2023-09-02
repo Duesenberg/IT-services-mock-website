@@ -37,6 +37,10 @@ function Reviews() {
               <span className="service-card-person-title">Startup Owner</span>
             </div>
           </li>
+
+          <a href="" 
+          className="self-start text-gray-100 p-4 text-l text-center uppercase font-bold bg-gray-500 rounded-md hover:bg-gray-400 transition-colors duration-200">
+            Read more reviews</a>
         </ul>
       </div>
     </section>
