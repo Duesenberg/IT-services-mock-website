@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.service-card {
+  @apply max-w-sm border border-solid border-gray-700 bg-gray-800 rounded-xl overflow-hidden flex flex-col gap-2 hover:bg-gray-700 transition-colors duration-300
+}
+
+.service-card-image {
+  @apply h-52 w-full object-cover
+}
+
+.service-card-info-wrapper {
+  @apply flex flex-col gap-4 px-8 py-8 items-center
+}
+
+.service-card-info-title {
+  @apply text-center text-2xl font-bold text-gray-100
+}
+
+.service-card-info-text {
+  @apply text-center text-lg text-gray-100
+}
+
+.service-card-info-action {
+  @apply text-center text-lg text-gray-400 font-bold hover:text-gray-300
+}
