@@ -1,6 +1,7 @@
 import AboutUs from "./assets/components/AboutUs";
 import Hero from "./assets/components/Hero";
 import Navigation from "./assets/components/Navigation";
+import Reviews from "./assets/components/Reviews";
 import Services from "./assets/components/Services";
 
 export default function App () {
@@ -10,6 +11,7 @@ export default function App () {
       <Hero />
       <Services />
       <AboutUs />
+      <Reviews />
     </div>
   )
 }

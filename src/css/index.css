@@ -25,3 +25,27 @@
 .service-card-info-action {
   @apply text-center text-lg text-gray-400 font-bold hover:text-gray-300
 }
+
+.review-card {
+  @apply p-8 max-w-sm border border-solid border-gray-700 bg-gray-800 rounded-xl overflow-hidden flex flex-col gap-4
+}
+
+.review-card-title {
+  @apply text-left text-2xl font-bold text-gray-100
+}
+
+.service-card-text {
+  @apply text-justify text-base text-gray-100
+}
+
+.service-card-person {
+  @apply flex flex-col
+}
+
+.service-card-person-name {
+  @apply text-right text-lg font-bold text-gray-100
+}
+
+.service-card-person-title {
+  @apply text-right text-base font-bold text-gray-400
+}

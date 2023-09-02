@@ -10,12 +10,12 @@ function AboutUs() {
           <img loading="lazy" decoding="async" src="src\assets\images\about-us.jpg" alt="about us" />
         </picture>
 
-        <div className="px-6 pt-8 bg-gray-800 flex flex-col gap-2">
+        <div className="px-6 pt-8 bg-gray-800 flex flex-col gap-4">
           <span className="uppercase text-start text-sm text-gray-100 font-bold">Who We Are</span>
-          <h2 className="text-4xl text-center text-gray-100 font-bold">Your Go-To Partners for Anything IT</h2>
+          <h2 className="text-4xl text-left text-gray-100 font-bold">Your Go-To Partners for Anything IT</h2>
         </div>
 
-        <div className="flex flex-col items-center px-6 pb-8 bg-gray-800 flex flex-col gap-2">
+        <div className="items-center px-6 pb-8 bg-gray-800 flex flex-col gap-2">
           <p className="mt-8 mb-2 text-justify text-base text-gray-100">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
           </p>
