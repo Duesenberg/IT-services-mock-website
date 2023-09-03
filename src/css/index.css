@@ -61,3 +61,7 @@
 .footer-copyright-link {
   @apply text-justify text-base text-gray-100 hover:text-gray-600
 }
+
+.header-nav-link {
+  @apply text-start text-xl font-bold flex flex-col tracking-wide text-gray-100 hover:text-sky-500 transition-colors duration-300
+}
