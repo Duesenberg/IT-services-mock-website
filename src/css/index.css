@@ -49,3 +49,15 @@
 .service-card-person-title {
   @apply text-right text-base font-bold text-gray-400
 }
+
+.footer-nav-link {
+  @apply text-start text-base text-gray-100
+}
+
+.footer-copyright {
+  @apply text-justify text-base text-gray-100
+}
+
+.footer-copyright-link {
+  @apply text-justify text-base text-gray-100 hover:text-gray-600
+}
