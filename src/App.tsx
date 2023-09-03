@@ -1,4 +1,5 @@
 import AboutUs from "./assets/components/AboutUs";
+import CallToAction from "./assets/components/CallToAction";
 import Hero from "./assets/components/Hero";
 import Navigation from "./assets/components/Navigation";
 import Reviews from "./assets/components/Reviews";
@@ -12,6 +13,7 @@ export default function App () {
       <Services />
       <AboutUs />
       <Reviews />
+      <CallToAction />
     </div>
   )
 }
