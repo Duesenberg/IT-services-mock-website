@@ -2,15 +2,23 @@ function Services() {
   return(
     <section>
       <div className="flex flex-col px-6 py-8 gap-10 bg-gray-900 relative">
-        <span className="absolute top-0 left-0 h-36 z-0 w-full bg-sky-950"
-        ></span>
-        <span className="absolute top-10 left-0 h-36 z-0 w-full bg-sky-950 skew-y-12"
-        ></span>
+        {/* Decorative Divs */}
+        {/* Top */}
+        <div className="absolute top-28 left-0 h-40 z-0 w-full bg-sky-900 skew-y-6"
+        ></div>
+        <div className="absolute top-0 left-0 h-32 z-0 w-full bg-sky-950"
+        ></div>
+        <div className="absolute top-12 left-0 h-36 z-0 w-full bg-sky-950 -skew-y-12"
+        ></div>
 
-        <span className="absolute bottom-0 left-0 h-36 z-0 w-full bg-sky-950"
-        ></span>
-        <span className="absolute bottom-16 left-0 h-36 z-0 w-full bg-sky-950 -skew-y-12"
-        ></span>
+        {/* Bottom */}
+        <div className="absolute bottom-28 left-0 h-40 z-0 w-full bg-sky-900 skew-y-6"
+        ></div>
+        <div className="absolute bottom-0 left-0 h-32 z-0 w-full bg-sky-950"
+        ></div>
+        <div className="absolute bottom-12 left-0 h-36 z-0 w-full bg-sky-950 -skew-y-12"
+        ></div>
+        {/* Decorative Divs ^ */}
         
         <div className="flex flex-col gap-4 z-10">
           <span className="uppercase text-start text-sm text-gray-100 font-bold">What we Do</span>
