@@ -65,3 +65,7 @@
 .header-nav-link {
   @apply text-start text-xl font-bold flex flex-col tracking-wide text-gray-100 hover:text-sky-500 transition-colors duration-300
 }
+
+.button-primary {
+  @apply text-gray-100 py-3 px-6 text-lg text-center font-bold bg-sky-500 hover:bg-sky-400 border border-solid border-sky-400 rounded-md transition-colors duration-200
+}
