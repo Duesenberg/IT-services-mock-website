@@ -4,7 +4,7 @@ function Reviews() {
       <div className="flex flex-col px-6 py-8 gap-10 bg-gray-900">
         <div className="flex flex-col gap-4">
           <span className="uppercase text-start text-sm text-gray-100 font-bold">Reviews</span>
-          <h2 className="text-4xl text-left text-gray-100 font-bold">What our customers think</h2>
+          <h2 className="text-4xl text-left text-gray-100 font-bold">What Our Customers Think</h2>
           <p className="text-base text-justify text-gray-100">
             Below are some of the reviews from our customers. Check them out and see what the people we have worked with have to say about our services.
           </p>
@@ -39,7 +39,7 @@ function Reviews() {
           </li>
 
           <a href="" 
-          className="self-start text-gray-100 p-4 text-l text-center uppercase font-bold bg-gray-500 rounded-md hover:bg-gray-400 transition-colors duration-200">
+          className="button-primary self-start">
             Read more reviews</a>
         </ul>
       </div>

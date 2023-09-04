@@ -27,11 +27,11 @@
 }
 
 .review-card {
-  @apply p-8 max-w-sm border border-solid border-gray-700 bg-gray-800 rounded-xl overflow-hidden flex flex-col gap-4
+  @apply p-8 max-w-sm border border-solid border-gray-700 bg-gray-800 rounded-xl overflow-hidden flex flex-col gap-4 shadow-sm shadow-gray-950 border-b-pink-700 border-b-4
 }
 
 .review-card-title {
-  @apply text-left text-2xl font-bold text-gray-100
+  @apply text-left text-2xl font-bold text-sky-500
 }
 
 .service-card-text {
@@ -47,7 +47,7 @@
 }
 
 .service-card-person-title {
-  @apply text-right text-base font-bold text-gray-400
+  @apply text-right text-base font-bold text-sky-700
 }
 
 .footer-nav-link {
