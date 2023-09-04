@@ -65,9 +65,11 @@ function Footer() {
         </ul>
 
         {/* Copyright */}
-        <div className="self-center">
-          <span className="footer-copyright">© Copyright 2023 - </span>
-          <a href="" className="footer-copyright-link">Mariposa Web Services</a>
+        <div className="w-full border-t border-sky-700 pt-4 flex justify-center">
+          <div>
+            <span className="footer-copyright">© Copyright 2023 - </span>
+            <a href="" className="footer-copyright-link text-center">Mariposa Web Services</a>
+          </div>
         </div>
       </div>
     </footer>
