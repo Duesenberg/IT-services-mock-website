@@ -17,13 +17,13 @@ function AboutUs() {
 
         <div className="items-center px-6 pb-8 bg-gray-800 flex flex-col gap-2">
           <p className="mt-8 mb-2 text-justify text-base text-gray-100">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            At ITBuddies, we are your trusted companions on the digital journey. With a passion for technology and a commitment to excellence, we have emerged as a premier IT company dedicated to solving your technology challenges and driving your business forward. 
           </p>
           <p className="mb-8 text-justify text-base text-gray-100">
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            Our mission is to simplify the complex world of technology for businesses of all sizes. We understand that in today's fast-paced digital landscape, businesses need reliable and innovative IT solutions to stay competitive. Our goal is to be your partner in navigating this landscape, providing you with the tools and support you need to thrive.
           </p>
           <a href="" 
-          className="self-start text-gray-100 p-4 text-l text-center uppercase font-bold bg-gray-500 rounded-md hover:bg-gray-400 transition-colors duration-200">
+          className="button-primary self-start">
             More About ITBuddy</a>
         </div>
       </div>
