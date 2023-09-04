@@ -1,13 +1,23 @@
 function Services() {
   return(
     <section>
-      <div className="flex flex-col px-6 py-8 gap-10 bg-gray-900">
-        <div className="flex flex-col gap-4">
+      <div className="flex flex-col px-6 py-8 gap-10 bg-gray-900 relative">
+        <span className="absolute top-0 left-0 h-36 z-0 w-full bg-sky-950"
+        ></span>
+        <span className="absolute top-10 left-0 h-36 z-0 w-full bg-sky-950 skew-y-12"
+        ></span>
+
+        <span className="absolute bottom-0 left-0 h-36 z-0 w-full bg-sky-950"
+        ></span>
+        <span className="absolute bottom-16 left-0 h-36 z-0 w-full bg-sky-950 -skew-y-12"
+        ></span>
+        
+        <div className="flex flex-col gap-4 z-10">
           <span className="uppercase text-start text-sm text-gray-100 font-bold">What we Do</span>
           <h2 className="text-4xl text-left text-gray-100 font-bold">IT Services</h2>
         </div>
         
-        <div className="flex flex-col gap-8 items-center">
+        <div className="flex flex-col gap-8 items-center z-10">
           <a href="" className="service-card">
             <img src="src\assets\images\hire-team.jpg" alt="hire a team" 
             decoding="async" loading="lazy" aria-hidden='true' className="service-card-image" />
