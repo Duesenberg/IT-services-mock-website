@@ -1,7 +1,7 @@
 function Services() {
   return(
     <section>
-      <div className="flex flex-col px-6 py-8 gap-10 bg-gray-900 relative md:px-10 md:py-16 xl:px-20">
+      <div className="flex flex-col px-6 py-8 gap-10 bg-gray-900 relative md:px-10 md:py-16 xl:px-20 bg-[url('./src/assets/images/graphy-dark.png')] bg-repeat bg-center">
         {/* Decorative Divs */}
         {/* Top */}
         <div className="absolute top-0 left-0 h-96 z-0 w-full bg-gradient-to-b from-pink-950 to-transparent"
