@@ -41,27 +41,37 @@ function Navigation() {
       toggleModeButton?.classList.remove('duration-500');
     }, 500);
   }
+
+  // Toggle aria-expanded attribute of mobile nav button
+  const toggleAriaExpanded = () => {
+    const mobileNavToggle =  document.querySelector('.mobile-nav-toggle');
+    mobileNavToggle?.setAttribute('aria-expanded', 
+    mobileNavToggle?.getAttribute('aria-expanded') === 'true' ? 'false' : 'true')
+  }
   
   return(
     <header className="sticky top-0 left-0 bg-gray-900 z-20">
       <div 
-      className="navigation-container flex justify-between items-center px-4 py-4 shadow-lg shadow-gray-800">
+      className="navigation-container flex justify-between items-center px-4 py-4 shadow-lg shadow-gray-800 md:px-10 lg:justify-center lg:gap-60 xl:justify-between xl:px-40">
         {/* Nav Logo */}
         <a href='' aria-label="back to home" className="nav-logo">
           <img src="src\assets\icons\glasses-svgrepo-com.svg" aria-hidden="true" decoding="async"
-          className="w-8 h-auto invert" />
+          className="w-8 md:w-12 h-auto invert" />
         </a>
 
         {/* Navigation List & Toggle Dark Mode Wrapper */}
-        <div className="flex flex-row-reverse items-center gap-4">
+        <div className="flex flex-row-reverse md:flex-row items-center gap-4 md:gap-8">
           {/* Navigation List */}
           <nav role="navigation"
           className="flex relative"
           ref={menuRef}>
             {/* Mobile Nav Toggle */}
             <button aria-label="mobile menu toggle" aria-controls="nav-menu" 
-            aria-expanded='false' onClick={toggleMenu}
-            className="w-8 h-8">
+            aria-expanded='false' onClick={() => {
+              toggleMenu();
+              toggleAriaExpanded();
+            }}
+            className="mobile-nav-toggle w-8 h-8 md:hidden">
               <div aria-hidden="true"
               className="flex flex-col w-full h-full justify-center items-center gap-1">
                 <span aria-hidden="true" 
@@ -80,8 +90,8 @@ function Navigation() {
 
             {/* Nav Links */}
             <div
-            className={'absolute w-screen top-12 -right-4  px-10 bg-gray-900 z-20 overflow-hidden transition-all duration-500 ease-in-out shadow-lg shadow-gray-800 ' + (!menuVisible ? "h-0" : "h-52")}>
-              <ul className={"py-2 flex flex-col gap-2 items-center"}>
+            className={'absolute w-screen top-12 -right-4  px-10 bg-gray-900 z-20 overflow-hidden transition-all duration-500 ease-in-out shadow-lg shadow-gray-800 md:static md:h-auto md:w-full md:bg-transparent md:shadow-none ' + (!menuVisible ? "h-0" : "h-52")}>
+              <ul className={"py-2 flex flex-col gap-2 items-center md:flex-row md:gap-8"}>
                 <li>
                   <a href="" className='header-nav-link'>Home</a>
                 </li>
