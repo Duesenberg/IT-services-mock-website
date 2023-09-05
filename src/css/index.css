@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .service-card {
-  @apply max-w-sm border border-solid border-gray-700 hover:border-gray-600 bg-gray-800 rounded-xl overflow-hidden flex flex-col gap-2 hover:bg-gray-700 transition-colors duration-1000 shadow-sm shadow-gray-950 after:h-2 after:w-full after:bg-gradient-to-r after:from-pink-700 after:to-pink-600
+  @apply max-w-sm border border-solid border-gray-700 hover:border-gray-600 bg-gray-800 rounded-xl overflow-hidden flex flex-col gap-2 hover:bg-gray-700 transition-colors duration-1000 shadow-sm shadow-gray-950 after:h-2 after:w-full after:bg-gradient-to-r after:from-pink-700 after:to-pink-600 md:items-stretch md:justify-between md:max-w-md
 }
 
 .service-card-image {
