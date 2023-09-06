@@ -15,27 +15,27 @@
 }
 
 .service-card-info-title {
-  @apply text-center text-2xl font-bold text-gray-100
+  @apply text-center text-2xl font-bold text-gray-100 lg:text-3xl
 }
 
 .service-card-info-text {
-  @apply text-center text-lg text-gray-100
+  @apply text-center text-lg text-gray-100 lg:text-xl
 }
 
 .service-card-info-action {
-  @apply text-center text-lg text-sky-500 font-bold hover:text-sky-400 transition-all duration-300
+  @apply text-center text-lg text-sky-500 font-bold hover:text-sky-400 transition-all duration-300 lg:text-xl
 }
 
 .review-card {
-  @apply p-8 max-w-sm border border-solid border-gray-700 bg-gray-800 rounded-xl overflow-hidden flex flex-col gap-4 shadow-sm shadow-gray-950 border-b-pink-700 border-b-4
+  @apply p-8 max-w-sm border border-solid border-gray-700 bg-gray-800 rounded-xl overflow-hidden flex flex-col gap-4 shadow-sm shadow-gray-950 border-b-pink-700 border-b-4 md:max-w-xs md:items-stretch md:justify-between lg:max-w-md xl:max-w-lg
 }
 
 .review-card-title {
-  @apply text-left text-2xl font-bold text-sky-500
+  @apply text-left text-2xl font-bold text-sky-500 lg:text-3xl
 }
 
 .service-card-text {
-  @apply text-justify text-base text-gray-100
+  @apply text-justify text-base text-gray-100 lg:text-lg
 }
 
 .service-card-person {
@@ -43,23 +43,23 @@
 }
 
 .service-card-person-name {
-  @apply text-right text-lg font-bold text-gray-100
+  @apply text-right text-lg font-bold text-gray-100 lg:text-xl
 }
 
 .service-card-person-title {
-  @apply text-right text-base font-bold text-sky-700
+  @apply text-right text-base font-bold text-sky-700 lg:text-lg
 }
 
 .footer-nav-link {
-  @apply text-start text-base text-gray-100
+  @apply text-start text-base text-gray-100 lg:text-lg hover:text-sky-500 transition-colors duration-300
 }
 
 .footer-copyright {
-  @apply text-justify text-base text-gray-100
+  @apply text-justify text-base text-gray-100 lg:text-lg
 }
 
 .footer-copyright-link {
-  @apply text-justify text-base text-gray-100 hover:text-gray-600
+  @apply text-justify text-base text-gray-100 hover:text-sky-500 transition-colors duration-300 lg:text-lg
 }
 
 .header-nav-link {

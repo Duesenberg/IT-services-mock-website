@@ -1,7 +1,7 @@
 function Footer() {
   return(
     <footer>
-      <div className="p-8 flex flex-col gap-6 bg-gray-800">
+      <div className="p-8 flex flex-col gap-6 bg-gray-800 md:flex-row md:justify-start md:gap-20 lg:gap-40 md:px-10 md:py-16">
         {/* Logo Group */}
         <div>
           <a href='' aria-label="back to home" className="nav-logo">
@@ -13,7 +13,7 @@ function Footer() {
         {/* Links */}
         <ul className="flex flex-col gap-1">
           <li className="mb-2">
-            <span className="uppercase text-start text-lg text-gray-100 font-bold">Sitemap</span>
+            <span className="uppercase text-start text-lg text-gray-100 font-bold lg:text-xl">Sitemap</span>
           </li>
           <li>
             <a className="footer-nav-link" href="">Home</a>
@@ -43,7 +43,7 @@ function Footer() {
           </li>
 
           <li>
-              <a className="footer-nav-link" href="mailto:info@codestitch.com">info@codestitch.com</a>
+              <a className="footer-nav-link" href="mailto:info@codestitch.com">info@itbuddies.com</a>
           </li>
 
           {/* Social Media */}
@@ -64,12 +64,12 @@ function Footer() {
           </li>
         </ul>
 
-        {/* Copyright */}
-        <div className="w-full border-t border-sky-700 pt-4 flex justify-center">
-          <div>
-            <span className="footer-copyright">© Copyright 2023 - </span>
-            <a href="" className="footer-copyright-link text-center">Mariposa Web Services</a>
-          </div>
+      </div>
+      {/* Copyright */}
+      <div className="w-auto border-t border-sky-900 py-4 flex justify-center bg-gray-800 mx-8">
+        <div>
+          <span className="footer-copyright">© Copyright 2023 - </span>
+          <a href="" className="footer-copyright-link text-center">Mariposa Web Services</a>
         </div>
       </div>
     </footer>

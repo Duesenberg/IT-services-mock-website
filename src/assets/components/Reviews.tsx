@@ -1,15 +1,24 @@
 function Reviews() {
   return(
     <section>
-      <div className="flex flex-col px-6 py-8 gap-10 bg-gray-900">
-        <div className="flex flex-col gap-4">
-          <span className="uppercase text-start text-sm text-gray-100 font-bold">Reviews</span>
-          <h2 className="text-4xl text-left text-gray-100 font-bold">What Our Customers Think</h2>
-          <p className="text-base text-justify text-gray-100">
+      <div className="relative flex flex-col px-6 py-8 gap-10 bg-gray-900 md:px-10 md:py-16 bg-[url('./src/assets/images/graphy-dark.png')] bg-repeat bg-center">
+        {/* Decorative Divs */}
+        {/* Top */}
+        <div className="opacity-40 absolute top-0 left-0 h-64 z-0 w-full bg-gradient-to-b from-pink-950 to-transparent"
+        ></div>
+        {/* Bottom */}
+        <div className="opacity-40 absolute bottom-0 left-0 h-64 z-0 w-full bg-gradient-to-t from-pink-950 to-transparent"
+        ></div>
+        {/* Decorative Divs ^ */}
+        
+        <div className="flex flex-col gap-4 z-10">
+          <span className="uppercase text-start text-sm text-gray-100 font-bold lg:text-base">Reviews</span>
+          <h2 className="text-4xl text-left text-gray-100 font-bold lg:text-5xl">What Our Customers Think</h2>
+          <p className="text-base text-justify text-gray-100 lg:text-lg">
             Below are some of the reviews from our customers. Check them out and see what the people we have worked with have to say about our services.
           </p>
         </div>
-        <ul className="flex flex-col gap-8 items-center">
+        <ul className="flex flex-col gap-8 items-center md:flex-row md:flex-wrap md:justify-around md:items-stretch z-10">
           <li className="review-card">
             <img src="src\assets\icons\quote-left-svgrepo-com.svg" alt="quote icon" aria-hidden="true" loading="lazy" decoding="async" 
             className="invert w-20 h-auto self-end" />
@@ -38,10 +47,11 @@ function Reviews() {
             </div>
           </li>
 
-          <a href="" 
-          className="button-primary self-start">
-            Read more reviews</a>
         </ul>
+
+        <a href="" 
+        className="button-primary self-start lg:self-center z-10">
+          Read more reviews</a>
       </div>
     </section>
   )

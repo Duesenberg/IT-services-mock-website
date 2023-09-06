@@ -1,26 +1,26 @@
 function CallToAction() {
   return(
     <section>
-      <div className="relative flex flex-col items-center p-8 gap-8 bg-gray-950 bg-opacity-60">
+      <div className="relative flex flex-col items-center p-8 gap-8 bg-gray-950 bg-opacity-60 md:px-10 md:py-16 lg:py-20 xl:py-32 lg:gap-10 overflow-hidden">
         <div className="items-center pb-8 flex flex-col gap-2">
-          <span className="uppercase text-start text-sm text-gray-100 font-bold self-start">Contact Us</span>
-          <h2 className="text-4xl text-left text-gray-100 font-bold self-start">Let's Get It Done!</h2>
-          <p className="mt-8 mb-2 text-justify text-base text-gray-100">
+          <span className="uppercase text-start text-sm text-gray-100 font-bold self-start lg:text-base">Contact Us</span>
+          <h2 className="text-4xl text-left text-gray-100 font-bold self-start lg:text-5xl">Let's Get It Done!</h2>
+          <p className="mt-8 mb-2 text-justify text-base text-gray-100 md:text-center lg:text-lg lg:mx-40 xl:mx-80">
             Contact us by sending us an e-mail and letting us know about what you need, or just give us a call. We will get back to you as soon as we can!
           </p>
-          <a href="" className="button-primary self-start">
+          <a href="" className="button-primary self-start md:self-center lg:mt-10">
             Contact Us</a>
         </div>
 
         {/* Background Image */}
-        <picture className="absolute top-0 left-0 -z-10 h-full">
+        <picture className="absolute top-0 left-0 -z-10 w-full overflow-hidden">
           <source media="(max-width: 600px)" srcSet="src\assets\images\contact-m.jpg" />
 
           <source media="(min-width: 601px)" srcSet="src\assets\images\contact.jpg" />
 
           <img loading="lazy" decoding="async" src="src\assets\images\contact.jpg" 
           alt="contact" aria-hidden="true"
-          className="object-cover h-full" />
+          className="object-cover w-0-full" />
         </picture>
       </div>
     </section> 
