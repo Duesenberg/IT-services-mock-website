@@ -1,4 +1,4 @@
-function Services() {
+function HomePageServices() {
   return(
     <section>
       <div className="flex flex-col px-6 py-8 gap-10 bg-gray-900 relative md:px-10 md:py-16 xl:px-20 bg-[url('./src/assets/images/graphy-dark.png')] bg-repeat bg-center">
@@ -73,4 +73,4 @@ function Services() {
   )
 }
 
-export default Services;
+export default HomePageServices;

@@ -1,11 +1,16 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./assets/components/Home";
+import HomePage from "./assets/components/HomePage/HomePage";
+import AboutPage from "./assets/components/AboutUs/AboutPage";
 
 export default function Router () {
   const router = createBrowserRouter([
     {
       path: '/',
-      element: <Home />
+      element: <HomePage />
+    },
+    {
+      path: 'about',
+      element: <AboutPage />
     }
   ])
   

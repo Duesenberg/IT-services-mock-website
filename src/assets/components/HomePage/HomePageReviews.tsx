@@ -1,4 +1,4 @@
-function Reviews() {
+function HomePageReviews() {
   return(
     <section>
       <div className="relative flex flex-col px-6 py-8 gap-10 bg-gray-900 md:px-10 md:py-16 bg-[url('./src/assets/images/graphy-dark.png')] bg-repeat bg-center">
@@ -57,4 +57,4 @@ function Reviews() {
   )
 }
 
-export default Reviews;
+export default HomePageReviews;

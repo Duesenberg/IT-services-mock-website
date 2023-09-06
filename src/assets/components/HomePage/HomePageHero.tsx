@@ -1,4 +1,4 @@
-function Hero() {
+function HomePageHero() {
   return(
     <section>
       <div className="relative flex flex-col items-center p-10 pb-20 gap-8 bg-gray-950 bg-opacity-60 md:mx-auto lg:py-40 lg:gap-16">
@@ -30,4 +30,4 @@ function Hero() {
   )
 }
 
-export default Hero;
+export default HomePageHero;

@@ -1,4 +1,4 @@
-function AboutUs() {
+function HomePageAbout() {
   return(
     <section>
       <div className="lg:flex lg:flex-row-reverse">
@@ -40,4 +40,4 @@ function AboutUs() {
   )
 }
 
-export default AboutUs;
+export default HomePageAbout;

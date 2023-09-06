@@ -1,4 +1,4 @@
-function CallToAction() {
+function HomePageCTA() {
   return(
     <section>
       <div className="relative flex flex-col items-center p-8 gap-8 bg-gray-950 bg-opacity-60 md:px-10 md:py-16 lg:py-20 xl:py-32 lg:gap-10 overflow-hidden">
@@ -27,4 +27,4 @@ function CallToAction() {
   )
 }
 
-export default CallToAction;
+export default HomePageCTA;
