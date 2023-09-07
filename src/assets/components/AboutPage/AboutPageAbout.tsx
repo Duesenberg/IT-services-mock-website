@@ -11,27 +11,6 @@ function AboutPageAbout () {
         ></div>
         {/* Decorative Divs ^ */}
 
-        {/* Images */}
-        {/* <div className="relative md:flex-1 m-8 mb-0 mt-16 md:mt-0 w-4/5 h-72 md:h-96 md:mr-10 lg:mr-20" >
-          <picture className="absolute block top-0 left-0 w-1/2 h-1/2"> */}
-            {/* Mobile Image*/}
-            {/* <source media="(max-width: 600px)" srcSet="src\assets\images\about-us-page-m.jpg" /> */}
-            {/* Tablet and above Image */}
-            {/* <source media="(min-width: 601px)" srcSet="src\assets\images\about-us-page.jpg" />
-            <img loading="lazy" decoding="async" src="src\assets\images\about-us-page.jpg" alt="about us" width="640" height="427"
-            className="absolute top-0 left-0 h-full w-full object-cover" />
-          </picture> */}
-
-          {/* <picture className="absolute block right-0 bottom-0 w-2/3 h-2/3"> */}
-            {/* Mobile Image*/}
-            {/* <source media="(max-width: 600px)" srcSet="src\assets\images\about-us-m.jpg" /> */}
-            {/* Tablet and above Image */}
-            {/* <source media="(min-width: 601px)" srcSet="src\assets\images\about-us.jpg" />
-            <img loading="lazy" decoding="async" src="src\assets\images\about-us.jpg" alt="about us"  width="640" height="427"
-            className="absolute top-0 left-0 h-full w-full object-cover border-8 border-solid border-gray-800" />
-          </picture>
-        </div> */}
-
         {/* What Sets Us Apart */}
         <div className="flex-1 px-6 py-8 md:px-10 md:py-16 xl:px-20 md:pl-0 z-10">
           <ul className="flex flex-col gap-8 items-center md:flex-row md:flex-wrap md:justify-around md:items-stretch z-10">
