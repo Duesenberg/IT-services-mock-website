@@ -81,3 +81,15 @@
 .about-us-card-text {
   @apply text-justify text-base text-gray-100
 }
+
+.service-list-item {
+  @apply relative flex flex-col md:flex-row md:items-center md:justify-between
+}
+
+.service-list-item-top {
+  @apply md:flex-1 flex flex-col gap-4 items-center
+}
+
+.service-list-item-bottom {
+  @apply md:w-3/4 relative z-10 items-center px-6 flex flex-col gap-2 md:px-10 xl:px-20
+}
