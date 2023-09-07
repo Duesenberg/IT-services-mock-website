@@ -43,22 +43,22 @@ function Footer() {
           </li>
 
           <li>
-              <a className="footer-nav-link" href="mailto:info@codestitch.com">info@itbuddies.com</a>
+              <a className="footer-nav-link" href="mailto:info@itbuddies.com">info@itbuddies.com</a>
           </li>
 
           {/* Social Media */}
           <li className="mt-2">
             <div className="flex gap-4">
-              <a className="cs-social-link" aria-label="visit google profile" href="">
-                <img className="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg" alt="google" width="20" height="20" />
+              <a className="" aria-label="visit google profile" href="">
+                <img className="" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg" alt="google" width="20" height="20" />
               </a>
 
-              <a className="cs-social-link" aria-label="visit facebook profile" href="">
-                <img className="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="20" height="20" />
+              <a className="" aria-label="visit facebook profile" href="">
+                <img className="" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="20" height="20" />
               </a>
 
-              <a className="cs-social-link" aria-label="visit instagram profile" href="">
-                <img className="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram"width="20" height="20" />
+              <a className="" aria-label="visit instagram profile" href="">
+                <img className="" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram"width="20" height="20" />
               </a>
             </div>
           </li>

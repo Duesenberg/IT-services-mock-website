@@ -1,5 +1,5 @@
 import HomePageAbout from "./HomePageAbout";
-import HomePageCTA from "./HomePageCTA";
+import CallToAction from "../CallToAction";
 import Footer from "../Footer";
 import HomePageHero from "./HomePageHero";
 import Navigation from "../Navigation";
@@ -15,7 +15,7 @@ function HomePage() {
         <HomePageServices />
         <HomePageAbout />
         <HomePageReviews />
-        <HomePageCTA />
+        <CallToAction />
       </main>
       <Footer />
     </div>

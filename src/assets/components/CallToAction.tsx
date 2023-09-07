@@ -1,4 +1,4 @@
-function HomePageCTA() {
+function CallToAction() {
   return(
     <section>
       <div className="relative flex flex-col items-center p-8 gap-8 bg-gray-950 bg-opacity-60 md:px-10 md:py-16 lg:py-20 xl:py-32 lg:gap-10 overflow-hidden">
@@ -13,18 +13,18 @@ function HomePageCTA() {
         </div>
 
         {/* Background Image */}
-        <picture className="absolute top-0 left-0 -z-10 w-full overflow-hidden">
+        <picture className="absolute top-0 left-0 -z-10 h-full">
           <source media="(max-width: 600px)" srcSet="src\assets\images\contact-m.jpg" />
 
           <source media="(min-width: 601px)" srcSet="src\assets\images\contact.jpg" />
 
           <img loading="lazy" decoding="async" src="src\assets\images\contact.jpg" 
-          alt="contact" aria-hidden="true"
-          className="object-cover w-0-full" />
+          alt="contact" aria-hidden="true" width="2250" height="1500"
+          className="object-cover h-full" />
         </picture>
       </div>
     </section> 
   )
 }
 
-export default HomePageCTA;
+export default CallToAction;

@@ -69,3 +69,15 @@
 .button-primary {
   @apply text-gray-100 py-3 px-6 text-lg text-center font-bold bg-sky-500 hover:bg-sky-400 border border-solid border-sky-400 rounded-md transition-colors duration-300 shadow-sm shadow-gray-950
 }
+
+.about-us-card {
+  @apply p-8 max-w-sm border border-solid border-gray-700 bg-gray-800 rounded-xl overflow-hidden flex flex-col gap-4 shadow-sm shadow-gray-950 border-b-pink-700 border-b-4 md:items-stretch md:justify-between xl:max-w-xs
+}
+
+.about-us-card-title {
+  @apply text-2xl font-bold text-center text-sky-500
+}
+
+.about-us-card-text {
+  @apply text-justify text-base text-gray-100
+}
