@@ -30,7 +30,7 @@ function HomePageAbout() {
             <p className="mb-8 text-justify text-base text-gray-100 lg:text-lg">
               Our mission is to simplify the complex world of technology for businesses of all sizes. We understand that in today's fast-paced digital landscape, businesses need reliable and innovative IT solutions to stay competitive. Our goal is to be your partner in navigating this landscape, providing you with the tools and support you need to thrive.
             </p>
-            <a href="" 
+            <a href="/about" 
             className="relative z-10 button-primary self-start">
               More About ITBuddy</a>
           </div>

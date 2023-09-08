@@ -49,7 +49,7 @@ function HomePageReviews() {
 
         </ul>
 
-        <a href="" 
+        <a href="/reviews" 
         className="button-primary self-start lg:self-center z-10">
           Read more reviews</a>
       </div>

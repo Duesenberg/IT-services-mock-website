@@ -93,19 +93,19 @@ function Navigation() {
             className={'absolute w-screen top-12 -right-4  px-10 bg-gray-900 z-20 overflow-hidden transition-all duration-500 ease-in-out shadow-lg shadow-gray-800 md:static md:h-auto md:w-full md:bg-transparent md:shadow-none ' + (!menuVisible ? "h-0" : "h-52")}>
               <ul className={"py-2 flex flex-col gap-2 items-center md:flex-row md:gap-8"}>
                 <li>
-                  <a href="" className='header-nav-link'>Home</a>
+                  <a href="/" className='header-nav-link'>Home</a>
                 </li>
                 <li>
-                  <a href="" className='header-nav-link'>About</a>
+                  <a href="/about" className='header-nav-link'>About</a>
                 </li>
                 <li>
-                  <a href="" className='header-nav-link'>Services</a>
+                  <a href="/services" className='header-nav-link'>Services</a>
                 </li>
                 <li>
-                  <a href="" className='header-nav-link'>Reviews</a>
+                  <a href="/reviews" className='header-nav-link'>Reviews</a>
                 </li>
                 <li>
-                  <a href="" className='header-nav-link'>Contact</a>
+                  <a href="/contact" className='header-nav-link'>Contact</a>
                 </li>
               </ul>
             </div>

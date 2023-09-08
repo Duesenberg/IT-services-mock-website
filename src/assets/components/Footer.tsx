@@ -16,19 +16,19 @@ function Footer() {
             <span className="uppercase text-start text-lg text-gray-100 font-bold lg:text-xl">Sitemap</span>
           </li>
           <li>
-            <a className="footer-nav-link" href="">Home</a>
+            <a className="footer-nav-link" href="/">Home</a>
           </li>
           <li>
-            <a className="footer-nav-link" href="">About</a>
+            <a className="footer-nav-link" href="/about">About</a>
           </li>
           <li>
-            <a className="footer-nav-link" href="">Services</a>
+            <a className="footer-nav-link" href="/services">Services</a>
           </li>
           <li>
-            <a className="footer-nav-link" href="">Portfolio</a>
+            <a className="footer-nav-link" href="/reviews">Reviews</a>
           </li>
           <li>
-            <a className="footer-nav-link" href="">Contact</a>
+            <a className="footer-nav-link" href="/contact">Contact</a>
           </li>
         </ul>
 

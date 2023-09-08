@@ -24,7 +24,7 @@ function HomePageServices() {
         </div>
         
         <div className="flex flex-col gap-8 items-center z-10 md:grid md:grid-cols-2 md:justify-items-center md:gap-16 md:items-stretch xl:grid-cols-2 xl:px-10">
-          <a href="" className="service-card">
+          <a href="/services" className="service-card">
             <img src="src\assets\images\hire-team.jpg" alt="hire a team" 
             decoding="async" loading="lazy" aria-hidden='true' className="service-card-image" />
 
@@ -35,7 +35,7 @@ function HomePageServices() {
             </div>
           </a>
 
-          <a href="" className="service-card">
+          <a href="/services" className="service-card">
             <img src="src\assets\images\hosting-maagement.jpg" alt="hosting and management" 
             decoding="async" loading="lazy" aria-hidden='true' className="service-card-image" />
 
@@ -46,7 +46,7 @@ function HomePageServices() {
             </div>
           </a>
 
-          <a href="" className="service-card">
+          <a href="/services" className="service-card">
             <img src="src\assets\images\support.jpg" alt="hire support" 
             decoding="async" loading="lazy" aria-hidden='true' className="service-card-image" />
 
@@ -57,7 +57,7 @@ function HomePageServices() {
             </div>
           </a>
 
-          <a href="" className="service-card">
+          <a href="/services" className="service-card">
             <img src="src\assets\images\webdev-team.jpg" alt="hire a team" 
             decoding="async" loading="lazy" aria-hidden='true' className="service-card-image" />
 
