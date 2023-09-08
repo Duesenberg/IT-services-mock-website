@@ -7,7 +7,7 @@ import AboutPageStats from "./AboutPageStats";
 
 function AboutPage () {
   return(
-    <div>
+    <div id="about-page">
       <Navigation />
       <main>
         <AboutPageHero />

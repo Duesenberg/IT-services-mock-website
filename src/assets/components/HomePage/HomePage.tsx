@@ -8,7 +8,7 @@ import HomePageServices from "./HomePageServices";
 
 function HomePage() {
   return(
-    <div>
+    <div id="home-page">
       <Navigation />
       <main>
         <HomePageHero />
