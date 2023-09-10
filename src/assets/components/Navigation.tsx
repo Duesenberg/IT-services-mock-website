@@ -2,7 +2,7 @@ import React from 'react'
 
 function Navigation() {
   const [menuVisible, setMenuVisible] = React.useState(false);
-  const [darkMode, setDarkMode] = React.useState(false);
+  const [darkMode, setDarkMode] = React.useState(true);
 
   const toggleMenu = () => setMenuVisible(!menuVisible);
   const toggleDarkMode = () => setDarkMode(!darkMode);
@@ -48,15 +48,20 @@ function Navigation() {
     mobileNavToggle?.setAttribute('aria-expanded', 
     mobileNavToggle?.getAttribute('aria-expanded') === 'true' ? 'false' : 'true')
   }
+
+  React.useEffect(() => {
+    if (darkMode) document.documentElement.classList.add('dark');
+    else document.documentElement.classList.remove('dark');
+  }, [darkMode])
   
   return(
-    <header className="sticky top-0 left-0 bg-gray-900 z-20">
+    <header className="sticky top-0 left-0 bg-gray-100 dark:bg-gray-900 z-20">
       <div 
-      className="navigation-container flex justify-between items-center px-4 py-4 shadow-lg shadow-gray-800 md:px-10 lg:justify-center lg:gap-60 xl:justify-between xl:px-40">
+      className="navigation-container flex justify-between items-center px-4 py-4 shadow-lg shadow-gray-500 dark:shadow-gray-800 md:px-10 lg:justify-center lg:gap-60 xl:justify-between xl:px-40">
         {/* Nav Logo */}
         <a href='' aria-label="back to home" className="nav-logo">
           <img src="src\assets\icons\glasses-svgrepo-com.svg" aria-hidden="true" decoding="async"
-          className="w-8 md:w-12 h-auto invert" />
+          className="w-8 md:w-12 h-auto dark:invert" />
         </a>
 
         {/* Navigation List & Toggle Dark Mode Wrapper */}
@@ -75,22 +80,22 @@ function Navigation() {
               <div aria-hidden="true"
               className="flex flex-col w-full h-full justify-center items-center gap-1">
                 <span aria-hidden="true" 
-                className={"w-3/4 h-1 bg-white rounded-md transition-all duration-300 " + (menuVisible ? "rotate-45 translate-y-2" : "")}
+                className={"w-3/4 h-1 bg-black dark:bg-white rounded-md transition-all duration-300 " + (menuVisible ? "rotate-45 translate-y-2" : "")}
                 ></span>
 
                 <span aria-hidden="true" 
-                className={"w-3/4 h-1 bg-white rounded-md transition-all duration-300 " + (menuVisible ? "opacity-0": "")}
+                className={"w-3/4 h-1 bg-black dark:bg-white rounded-md transition-all duration-300 " + (menuVisible ? "opacity-0": "")}
                 ></span>
 
                 <span aria-hidden="true" 
-                className={"w-3/4 h-1 bg-white rounded-md transition-all duration-300 " + (menuVisible ? "-rotate-45 -translate-y-2" : "")}
+                className={"w-3/4 h-1 bg-black dark:bg-white rounded-md transition-all duration-300 " + (menuVisible ? "-rotate-45 -translate-y-2" : "")}
                 ></span>
               </div>
             </button>
 
             {/* Nav Links */}
             <div
-            className={'absolute w-screen top-12 -right-4  px-10 bg-gray-900 z-20 overflow-hidden transition-all duration-500 ease-in-out shadow-lg shadow-gray-800 md:static md:h-auto md:w-full md:bg-transparent md:shadow-none ' + (!menuVisible ? "h-0" : "h-52")}>
+            className={'absolute w-screen top-12 -right-4  px-10 bg-gray-100 dark:bg-gray-900 z-20 overflow-hidden transition-all duration-500 ease-in-out shadow-lg shadow-gray-800 md:static md:h-auto md:w-full md:bg-transparent md:shadow-none ' + (!menuVisible ? "h-0" : "h-52")}>
               <ul className={"py-2 flex flex-col gap-2 items-center md:flex-row md:gap-8"}>
                 <li>
                   <a href="/" id='home-navlink' className='header-nav-link'>Home</a>
@@ -117,14 +122,14 @@ function Navigation() {
             animateToggleButton();
           }} 
           className='toggle-mode-button'>
-            {darkMode &&
+            {!darkMode &&
             <img src="src\assets\icons\moon-svgrepo-com.svg" alt="moon" aria-hidden='true'
-            className="w-8 h-auto invert" />
+            className="w-8 h-auto dark:invert" />
             }
 
-            {!darkMode &&
+            {darkMode &&
             <img src="src\assets\icons\sun-svgrepo-com.svg" alt="sun" aria-hidden='true'
-            className="w-8 h-auto invert" />
+            className="w-8 h-auto dark:invert" />
             }
           </button>
         </div>
