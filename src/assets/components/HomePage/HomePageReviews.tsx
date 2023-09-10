@@ -4,10 +4,10 @@ function HomePageReviews() {
       <div className="relative flex flex-col px-6 py-8 gap-10 bg-gray-100 dark:bg-gray-900 md:px-10 md:py-16 bg-[url('./src/assets/images/graphy-dark.png')] bg-repeat bg-center">
         {/* Decorative Divs */}
         {/* Top */}
-        <div className="opacity-40 absolute top-0 left-0 h-64 z-0 w-full bg-gradient-to-b from-pink-600 dark:from-pink-950 to-transparent"
+        <div className="opacity-40 absolute top-0 left-0 h-64 z-0 w-full bg-gradient-to-b from-sky-500 dark:from-pink-950 to-transparent"
         ></div>
         {/* Bottom */}
-        <div className="opacity-40 absolute bottom-0 left-0 h-64 z-0 w-full bg-gradient-to-t from-pink-600 dark:from-pink-950 to-transparent"
+        <div className="opacity-40 absolute bottom-0 left-0 h-64 z-0 w-full bg-gradient-to-t from-sky-500 dark:from-pink-950 to-transparent"
         ></div>
         {/* Decorative Divs ^ */}
         

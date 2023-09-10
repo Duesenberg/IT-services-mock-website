@@ -2,11 +2,21 @@ import React from 'react'
 
 function Navigation() {
   const [menuVisible, setMenuVisible] = React.useState(false);
-  const [darkMode, setDarkMode] = React.useState(true);
+  const [darkMode, setDarkMode] = React.useState<boolean | null | string>(true);
 
   const toggleMenu = () => setMenuVisible(!menuVisible);
-  const toggleDarkMode = () => setDarkMode(!darkMode);
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode)
+    localStorage.setItem('darkMode', JSON.stringify(!darkMode))
+  };
 
+  // Check if darkMode is in localStorage, load it from there if so. else,
+  // set darkMode as true
+  React.useEffect(() => {
+    const darkModeCopy = localStorage.getItem('darkMode');
+    setDarkMode(darkModeCopy !== null ? JSON.parse(darkModeCopy) : true)
+  }, [])
+  
   // Hide Nav Links when clicking anywhere else on screen
   const menuRef = React.useRef() as React.RefObject<HTMLElement>;
   React.useEffect(() => {
@@ -49,6 +59,7 @@ function Navigation() {
     mobileNavToggle?.getAttribute('aria-expanded') === 'true' ? 'false' : 'true')
   }
 
+  // Add/remove class of 'dark' on html document depending on darkMode
   React.useEffect(() => {
     if (darkMode) document.documentElement.classList.add('dark');
     else document.documentElement.classList.remove('dark');
@@ -95,7 +106,7 @@ function Navigation() {
 
             {/* Nav Links */}
             <div
-            className={'absolute w-screen top-12 -right-4  px-10 bg-gray-100 dark:bg-gray-900 z-20 overflow-hidden transition-all duration-500 ease-in-out shadow-lg shadow-gray-800 md:static md:h-auto md:w-full md:bg-transparent md:shadow-none ' + (!menuVisible ? "h-0" : "h-52")}>
+            className={'absolute w-screen top-12 -right-4  px-10 bg-gray-100 dark:bg-gray-900 z-20 overflow-hidden transition-all duration-500 ease-in-out md:transition-none shadow-lg shadow-gray-800 md:static md:h-auto md:w-full md:bg-transparent md:shadow-none ' + (!menuVisible ? "h-0" : "h-52")}>
               <ul className={"py-2 flex flex-col gap-2 items-center md:flex-row md:gap-8"}>
                 <li>
                   <a href="/" id='home-navlink' className='header-nav-link'>Home</a>
