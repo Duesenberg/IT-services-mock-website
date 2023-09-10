@@ -51,7 +51,7 @@
 }
 
 .footer-nav-link {
-  @apply text-start text-base text-gray-900 dark:text-gray-100 lg:text-lg hover:text-sky-500 transition-colors duration-300
+  @apply text-start text-base text-gray-900 dark:text-gray-100 lg:text-lg hover:text-sky-500  dark:hover:text-sky-500 transition-colors duration-300
 }
 
 .footer-copyright {
@@ -59,11 +59,11 @@
 }
 
 .footer-copyright-link {
-  @apply text-justify text-base text-gray-900 dark:text-gray-100 hover:text-sky-500 transition-colors duration-300 lg:text-lg
+  @apply text-justify text-base text-gray-900 dark:text-gray-100 hover:text-sky-500 dark:hover:text-sky-500 transition-colors duration-300 lg:text-lg
 }
 
 .header-nav-link {
-  @apply text-start text-xl font-bold flex flex-col tracking-wide text-gray-900 dark:text-gray-100 hover:text-sky-500 transition-colors duration-300
+  @apply text-start text-xl font-bold flex flex-col tracking-wide text-gray-900 dark:text-gray-100 hover:text-sky-500  dark:hover:text-sky-500 transition-colors duration-300
 }
 
 .button-primary {
