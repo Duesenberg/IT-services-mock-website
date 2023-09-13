@@ -1,3 +1,5 @@
+import logo from '../icons/glasses-svgrepo-com.svg';
+
 function Footer() {
   return(
     <footer>
@@ -5,7 +7,7 @@ function Footer() {
         {/* Logo Group */}
         <div>
           <a href='' aria-label="back to home" className="nav-logo">
-            <img src="src\assets\icons\glasses-svgrepo-com.svg" aria-hidden="true" decoding="async"
+            <img src={logo} aria-hidden="true" decoding="async"
             className="w-32 h-auto dark:invert" />
           </a>
         </div>

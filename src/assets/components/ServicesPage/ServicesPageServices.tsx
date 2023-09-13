@@ -1,7 +1,12 @@
+import computerIcon from '../../icons/computer-svgrepo-com.svg'; 
+import serverIcon from '../../icons/server-svgrepo-com.svg'; 
+import headPhonesIcon from '../../icons/headphones-alt-2-svgrepo-com.svg'; 
+import developerIcon from '../../icons/developer-centerpublic-api-svgrepo-com.svg'; 
+
 function ServicesPageServices() {
   return(
     <section>
-      <div className="flex flex-col px-6 py-8 gap-10 bg-gray-100 dark:bg-gray-900 relative md:px-10 md:py-16 xl:px-20 bg-[url('./src/assets/images/graphy-dark.png')] bg-repeat bg-center">
+      <div id="servicesPageServices" className="flex flex-col px-6 py-8 gap-10 bg-gray-100 dark:bg-gray-900 relative md:px-10 md:py-16 xl:px-20 bg-repeat bg-center">
         {/* Decorative Divs */}
         {/* Top */}
         <div className="absolute top-0 left-0 h-96 z-0 w-full bg-gradient-to-b from-sky-500 dark:from-pink-950 to-transparent opacity-40 dark:opacity-100"
@@ -20,7 +25,7 @@ function ServicesPageServices() {
           <li className="service-list-item">
             <div className="service-list-item-top">
               <picture className="invert dark:invert-0" aria-hidden="true">
-                <img className="invert" src="src\assets\icons\computer-svgrepo-com.svg" alt="icon" width="100" height="100" loading="lazy" decoding="async" />
+                <img className="invert" src={computerIcon} alt="icon" width="100" height="100" loading="lazy" decoding="async" />
               </picture>
               <h2 className="text-2xl text-center text-gray-900 dark:text-gray-100 font-bold lg:text-3xl">IT Services</h2>
             </div>
@@ -35,7 +40,7 @@ function ServicesPageServices() {
           <li className="service-list-item">
             <div className="service-list-item-top">
               <picture className="invert dark:invert-0" aria-hidden="true">
-                <img className="invert" src="src\assets\icons\server-svgrepo-com.svg" alt="icon" width="100" height="100" loading="lazy" decoding="async" />
+                <img className="invert" src={serverIcon} alt="icon" width="100" height="100" loading="lazy" decoding="async" />
               </picture>
               <h2 className="text-2xl text-center text-gray-900 dark:text-gray-100 font-bold lg:text-3xl">Website Management</h2>
             </div>
@@ -50,7 +55,7 @@ function ServicesPageServices() {
           <li className="service-list-item">
             <div className="service-list-item-top">
               <picture className="invert dark:invert-0" aria-hidden="true">
-                <img className="invert" src="src\assets\icons\headphones-alt-2-svgrepo-com.svg" alt="icon" width="100" height="100" loading="lazy" decoding="async" />
+                <img className="invert" src={headPhonesIcon} alt="icon" width="100" height="100" loading="lazy" decoding="async" />
               </picture>
               <h2 className="text-2xl text-center text-gray-900 dark:text-gray-100 font-bold lg:text-3xl">24/7 IT Support</h2>
             </div>
@@ -65,7 +70,7 @@ function ServicesPageServices() {
           <li className="service-list-item">
             <div className="service-list-item-top">
               <picture className="invert dark:invert-0" aria-hidden="true">
-                <img className="invert" src="src\assets\icons\developer-centerpublic-api-svgrepo-com.svg" alt="icon" width="100" height="100" loading="lazy" decoding="async" />
+                <img className="invert" src={developerIcon} alt="icon" width="100" height="100" loading="lazy" decoding="async" />
               </picture>
               <h2 className="text-2xl text-center text-gray-900 dark:text-gray-100 font-bold lg:text-3xl">Design, Development, SEO</h2>
             </div>

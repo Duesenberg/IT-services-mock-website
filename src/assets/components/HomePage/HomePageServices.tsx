@@ -1,7 +1,12 @@
+import hireTeamBg from '../../images/hire-team.jpg';
+import hostingMgmgtBg from '../../images/hosting-maagement.jpg';
+import supportBg from '../../images/support.jpg';
+import webDevTeamBg from '../../images/webdev-team.jpg';
+
 function HomePageServices() {
   return(
     <section>
-      <div className="flex flex-col px-6 py-8 gap-10 bg-gray-100 dark:bg-gray-900 relative md:px-10 md:py-16 xl:px-20 bg-[url('./src/assets/images/graphy-dark.png')] bg-repeat bg-center">
+      <div id="homePageServices" className="flex flex-col px-6 py-8 gap-10 bg-gray-100 dark:bg-gray-900 relative md:px-10 md:py-16 xl:px-20 bg-repeat bg-center">
         {/* Decorative Divs */}
         {/* Top */}
         <div className="absolute top-0 left-0 h-96 z-0 w-full bg-gradient-to-b from-sky-500 dark:from-pink-950 to-transparent"
@@ -25,7 +30,7 @@ function HomePageServices() {
         
         <div className="flex flex-col gap-8 items-center z-10 md:grid md:grid-cols-2 md:justify-items-center md:gap-16 md:items-stretch xl:grid-cols-2 xl:px-10">
           <a href="/services" className="service-card">
-            <img src="src\assets\images\hire-team.jpg" alt="hire a team" 
+            <img src={hireTeamBg} alt="hire a team" 
             decoding="async" loading="lazy" aria-hidden='true' className="service-card-image" />
 
             <div className="service-card-info-wrapper">
@@ -36,7 +41,7 @@ function HomePageServices() {
           </a>
 
           <a href="/services" className="service-card">
-            <img src="src\assets\images\hosting-maagement.jpg" alt="hosting and management" 
+            <img src={hostingMgmgtBg} alt="hosting and management" 
             decoding="async" loading="lazy" aria-hidden='true' className="service-card-image" />
 
             <div className="service-card-info-wrapper">
@@ -47,7 +52,7 @@ function HomePageServices() {
           </a>
 
           <a href="/services" className="service-card">
-            <img src="src\assets\images\support.jpg" alt="hire support" 
+            <img src={supportBg} alt="hire support" 
             decoding="async" loading="lazy" aria-hidden='true' className="service-card-image" />
 
             <div className="service-card-info-wrapper">
@@ -58,7 +63,7 @@ function HomePageServices() {
           </a>
 
           <a href="/services" className="service-card">
-            <img src="src\assets\images\webdev-team.jpg" alt="hire a team" 
+            <img src={webDevTeamBg} alt="hire a team" 
             decoding="async" loading="lazy" aria-hidden='true' className="service-card-image" />
 
             <div className="service-card-info-wrapper">

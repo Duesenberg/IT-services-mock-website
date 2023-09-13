@@ -1,3 +1,6 @@
+import contactBackground from '../images/contact.jpg';
+import contactBackgroundMobile from '../images/contact-m.jpg';
+
 function CallToAction() {
   return(
     <section>
@@ -14,11 +17,11 @@ function CallToAction() {
 
         {/* Background Image */}
         <picture className="absolute top-0 left-0 -z-10 h-full">
-          <source media="(max-width: 600px)" srcSet="src\assets\images\contact-m.jpg" />
+          <source media="(max-width: 600px)" srcSet={contactBackgroundMobile} />
 
-          <source media="(min-width: 601px)" srcSet="src\assets\images\contact.jpg" />
+          <source media="(min-width: 601px)" srcSet={contactBackground} />
 
-          <img loading="lazy" decoding="async" src="src\assets\images\contact.jpg" 
+          <img loading="lazy" decoding="async" src={contactBackground} 
           alt="contact" aria-hidden="true" width="2250" height="1500"
           className="object-cover h-full" />
         </picture>

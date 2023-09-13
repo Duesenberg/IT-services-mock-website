@@ -1,7 +1,10 @@
+import contactBackground from '../../images/contact.jpg';
+import contactBackgroundMobile from '../../images/contact-m.jpg';
+
 function ContactPageContact() {
   return(
     <section>
-      <div className="flex flex-col px-6 py-8 gap-10 bg-gray-100 dark:bg-gray-900 relative md:px-10 md:py-16 xl:px-20 bg-[url('./src/assets/images/graphy-dark.png')] bg-repeat bg-center">
+      <div id="contactPageContact" className="flex flex-col px-6 py-8 gap-10 bg-gray-100 dark:bg-gray-900 relative md:px-10 md:py-16 xl:px-20 bg-repeat bg-center">
         {/* Decorative Divs */}
         {/* Top */}
         <div className="absolute top-0 left-0 h-96 z-0 w-full bg-gradient-to-b from-sky-500 dark:from-pink-950 to-transparent opacity-40"
@@ -94,11 +97,11 @@ function ContactPageContact() {
             </ul>
 
             <picture className="absolute top-0 left-0 -z-10 h-full">
-              <source media="(max-width: 600px)" srcSet="src\assets\images\contact-m.jpg" />
+              <source media="(max-width: 600px)" srcSet={contactBackgroundMobile} />
 
-              <source media="(min-width: 601px)" srcSet="src\assets\images\contact.jpg" />
+              <source media="(min-width: 601px)" srcSet={contactBackground} />
 
-              <img loading="lazy" decoding="async" src="src\assets\images\contact.jpg" 
+              <img loading="lazy" decoding="async" src={contactBackground} 
               alt="contact" aria-hidden="true" width="2250" height="1500"
               className="object-cover h-full" />
             </picture>

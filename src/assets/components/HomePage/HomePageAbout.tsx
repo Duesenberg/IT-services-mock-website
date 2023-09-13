@@ -1,13 +1,16 @@
+import aboutUsBackground from '../../images/about-us.jpg'
+import aboutUsBackgroundMobile from '../../images/about-us-m.jpg'
+
 function HomePageAbout() {
   return(
     <section>
       <div className="lg:flex lg:flex-row-reverse">
         <picture className="lg:flex-1 relative z-10">
           {/* Mobile Image*/}
-          <source media="(max-width: 600px)" srcSet="src\assets\images\about-us-m.jpg" />
+          <source media="(max-width: 600px)" srcSet={aboutUsBackgroundMobile} />
           {/* Tablet and above Image */}
-          <source media="(min-width: 601px)" srcSet="src\assets\images\about-us.jpg" />
-          <img loading="lazy" decoding="async" src="src\assets\images\about-us.jpg" alt="about us"
+          <source media="(min-width: 601px)" srcSet={aboutUsBackground} />
+          <img loading="lazy" decoding="async" src={aboutUsBackground}
           className="lg:object-cover lg:h-full" />
         </picture>
 

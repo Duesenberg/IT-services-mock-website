@@ -122,3 +122,8 @@
 #contact-page #contact-navlink {
   color: #0ea5e9;
 }
+
+/* Grid backgrounds on some of the page sections */
+#aboutPageAbout, #contactPageContact, #homePageReviews, #homePageServices, #homePageServices, #servicesPageServices {
+  background-image: url('../assets/images/graphy-dark.png');
+}

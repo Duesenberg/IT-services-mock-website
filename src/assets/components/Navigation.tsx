@@ -1,4 +1,7 @@
-import React from 'react'
+import React from 'react';
+import logo from '../icons/glasses-svgrepo-com.svg';
+import moonIcon from '../icons/moon-svgrepo-com.svg';
+import sunIcon from '../icons/sun-svgrepo-com.svg';
 
 function Navigation() {
   const [menuVisible, setMenuVisible] = React.useState(false);
@@ -71,7 +74,7 @@ function Navigation() {
       className="navigation-container flex justify-between items-center px-4 py-4 shadow-lg shadow-gray-500 dark:shadow-gray-800 md:px-10 lg:justify-center lg:gap-60 xl:justify-between xl:px-40">
         {/* Nav Logo */}
         <a href='' aria-label="back to home" className="nav-logo">
-          <img src="src\assets\icons\glasses-svgrepo-com.svg" aria-hidden="true" decoding="async"
+          <img src={logo} aria-hidden="true" decoding="async"
           className="w-8 md:w-12 h-auto dark:invert" />
         </a>
 
@@ -134,12 +137,12 @@ function Navigation() {
           }} 
           className='toggle-mode-button'>
             {!darkMode &&
-            <img src="src\assets\icons\moon-svgrepo-com.svg" alt="moon" aria-hidden='true'
+            <img src={moonIcon} alt="moon" aria-hidden='true'
             className="w-8 h-auto dark:invert" />
             }
 
             {darkMode &&
-            <img src="src\assets\icons\sun-svgrepo-com.svg" alt="sun" aria-hidden='true'
+            <img src={sunIcon} alt="sun" aria-hidden='true'
             className="w-8 h-auto dark:invert" />
             }
           </button>

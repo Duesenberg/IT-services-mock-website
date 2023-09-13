@@ -1,7 +1,9 @@
+import quoteIcon from '../../icons/quote-left-svgrepo-com.svg';
+
 function HomePageReviews() {
   return(
     <section>
-      <div className="relative flex flex-col px-6 py-8 gap-10 bg-gray-100 dark:bg-gray-900 md:px-10 md:py-16 bg-[url('./src/assets/images/graphy-dark.png')] bg-repeat bg-center">
+      <div id="homePageReviews" className="relative flex flex-col px-6 py-8 gap-10 bg-gray-100 dark:bg-gray-900 md:px-10 md:py-16 bg-repeat bg-center">
         {/* Decorative Divs */}
         {/* Top */}
         <div className="opacity-40 absolute top-0 left-0 h-64 z-0 w-full bg-gradient-to-b from-sky-500 dark:from-pink-950 to-transparent"
@@ -20,7 +22,7 @@ function HomePageReviews() {
         </div>
         <ul className="flex flex-col gap-8 items-center md:flex-row md:flex-wrap md:justify-around md:items-stretch z-10">
           <li className="review-card">
-            <img src="src\assets\icons\quote-left-svgrepo-com.svg" alt="quote icon" aria-hidden="true" loading="lazy" decoding="async" 
+            <img src={quoteIcon} alt="quote icon" aria-hidden="true" loading="lazy" decoding="async" 
             className="dark:invert w-20 h-auto self-end" />
             <h3 className="review-card-title">Excellent communication</h3>
             <p className="service-card-text">
@@ -34,7 +36,7 @@ function HomePageReviews() {
           </li>
           
           <li className="review-card">
-            <img src="src\assets\icons\quote-left-svgrepo-com.svg" alt="quote icon" aria-hidden="true" loading="lazy" decoding="async" 
+            <img src={quoteIcon} alt="quote icon" aria-hidden="true" loading="lazy" decoding="async" 
             className="dark:invert w-20 h-auto self-end" />
             <h3 className="review-card-title">Very fast and efficient</h3>
             <p className="service-card-text">

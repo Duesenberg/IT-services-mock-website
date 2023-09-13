@@ -1,7 +1,12 @@
+import starIcon from '../../icons/star-svgrepo-com.svg';
+import handShakeIcon from '../../icons/handshake-svgrepo-com.svg';
+import bulbIcon from '../../icons/bulb-on-svgrepo-com.svg';
+import gearIcon from '../../icons/gear-svgrepo-com.svg';
+
 function AboutPageAbout () {
   return(
     <section>
-      <div className="relative flex flex-col-reverse md:flex-row-reverse items-center bg-gray-100 dark:bg-gray-900 bg-[url('./src/assets/images/graphy-dark.png')] bg-repeat bg-center">
+      <div id='aboutPageAbout' className="relative flex flex-col-reverse md:flex-row-reverse items-center bg-gray-100 dark:bg-gray-900 bg-repeat bg-center">
         {/* Decorative Divs */}
         {/* Top */}
         <div className="absolute top-0 left-0 h-56 z-0 w-full bg-gradient-to-b from-sky-500 dark:from-pink-950 to-transparent dark:opacity-40 opacity-40"
@@ -15,7 +20,7 @@ function AboutPageAbout () {
         <div className="flex-1 px-6 py-8 md:px-10 md:py-16 xl:px-20 md:pl-0 z-10">
           <ul className="flex flex-col gap-8 items-center md:flex-row md:flex-wrap md:justify-around md:items-stretch z-10">
             <li className="about-us-card">
-              <img src="src\assets\icons\star-svgrepo-com.svg" alt="star" aria-hidden="true" loading="lazy" decoding="async" 
+              <img src={starIcon} alt="star" aria-hidden="true" loading="lazy" decoding="async" 
               className="dark:invert w-14 h-auto self-center" />
               <h3 className="about-us-card-title">Expertise</h3>
               <p className="about-us-card-text">
@@ -24,7 +29,7 @@ function AboutPageAbout () {
             </li>
 
             <li className="about-us-card">
-              <img src="src\assets\icons\handshake-svgrepo-com.svg" alt="handshake" aria-hidden="true" loading="lazy" decoding="async" 
+              <img src={handShakeIcon} alt="handshake" aria-hidden="true" loading="lazy" decoding="async" 
               className="dark:invert w-14 h-auto self-center" />
               <h3 className="about-us-card-title">Client-Centric Approach</h3>
               <p className="about-us-card-text">
@@ -33,7 +38,7 @@ function AboutPageAbout () {
             </li>
 
             <li className="about-us-card">
-              <img src="src\assets\icons\bulb-on-svgrepo-com.svg" alt="light bulb" aria-hidden="true" loading="lazy" decoding="async" 
+              <img src={bulbIcon} alt="light bulb" aria-hidden="true" loading="lazy" decoding="async" 
               className="dark:invert w-14 h-auto self-center" />
               <h3 className="about-us-card-title">Innovation</h3>
               <p className="about-us-card-text">
@@ -42,7 +47,7 @@ function AboutPageAbout () {
             </li>
 
             <li className="about-us-card">
-              <img src="src\assets\icons\gear-svgrepo-com.svg" alt="gear" aria-hidden="true" loading="lazy" decoding="async" 
+              <img src={gearIcon} alt="gear" aria-hidden="true" loading="lazy" decoding="async" 
               className="dark:invert w-14 h-auto self-center" />
               <h3 className="about-us-card-title">Reliability</h3>
               <p className="about-us-card-text">

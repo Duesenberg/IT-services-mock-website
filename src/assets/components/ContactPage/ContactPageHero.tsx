@@ -1,3 +1,6 @@
+import monitorImage from '../../images/monitor.jpg';
+import monitorImageMobile from '../../images/monitor-m.jpg';
+
 function ContactPageHero () {
   return(
     <section>
@@ -7,12 +10,12 @@ function ContactPageHero () {
         {/* Background Image */}
         <picture className="absolute top-0 left-0 -z-10 h-full">
             <source media="(max-width: 600px)" 
-            srcSet="src\assets\images\monitor-m.jpg" />
+            srcSet={monitorImageMobile} />
 
             <source media="(min-width: 601px)" 
-            srcSet="src\assets\images\monitor.jpg" />
+            srcSet={monitorImage} />
 
-            <img loading="lazy" decoding="async" src="src\assets\images\monitor.jpg" 
+            <img loading="lazy" decoding="async" src={monitorImage} 
             alt="monitor" width="2250" height="1500" aria-hidden="true"
             className="object-cover h-full" />
         </picture>
