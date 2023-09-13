@@ -1,5 +1,6 @@
 {
   "name": "it-services-mock-website",
+  "homepage": "https://duesenberg.github.io/IT-services-mock-website/",
   "private": true,
   "version": "0.0.0",
   "type": "module",

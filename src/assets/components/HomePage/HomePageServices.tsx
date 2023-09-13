@@ -29,7 +29,7 @@ function HomePageServices() {
         </div>
         
         <div className="flex flex-col gap-8 items-center z-10 md:grid md:grid-cols-2 md:justify-items-center md:gap-16 md:items-stretch xl:grid-cols-2 xl:px-10">
-          <a href="/services" className="service-card">
+          <a href="#/services" className="service-card">
             <img src={hireTeamBg} alt="hire a team" 
             decoding="async" loading="lazy" aria-hidden='true' className="service-card-image" />
 
@@ -40,7 +40,7 @@ function HomePageServices() {
             </div>
           </a>
 
-          <a href="/services" className="service-card">
+          <a href="#/services" className="service-card">
             <img src={hostingMgmgtBg} alt="hosting and management" 
             decoding="async" loading="lazy" aria-hidden='true' className="service-card-image" />
 
@@ -51,7 +51,7 @@ function HomePageServices() {
             </div>
           </a>
 
-          <a href="/services" className="service-card">
+          <a href="#/services" className="service-card">
             <img src={supportBg} alt="hire support" 
             decoding="async" loading="lazy" aria-hidden='true' className="service-card-image" />
 
@@ -62,7 +62,7 @@ function HomePageServices() {
             </div>
           </a>
 
-          <a href="/services" className="service-card">
+          <a href="#/services" className="service-card">
             <img src={webDevTeamBg} alt="hire a team" 
             decoding="async" loading="lazy" aria-hidden='true' className="service-card-image" />
 

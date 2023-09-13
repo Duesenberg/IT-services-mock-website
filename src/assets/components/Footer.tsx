@@ -6,7 +6,7 @@ function Footer() {
       <div className="p-8 flex flex-col gap-6 bg-gray-100 dark:bg-gray-800 md:flex-row md:justify-start md:gap-20 lg:gap-40 md:px-10 md:py-16">
         {/* Logo Group */}
         <div>
-          <a href='' aria-label="back to home" className="nav-logo">
+          <a href='#/' aria-label="back to home" className="nav-logo">
             <img src={logo} aria-hidden="true" decoding="async"
             className="w-32 h-auto dark:invert" />
           </a>
@@ -18,19 +18,19 @@ function Footer() {
             <span className="uppercase text-start text-lg text-gray-900 dark:text-gray-100 font-bold lg:text-xl">Sitemap</span>
           </li>
           <li>
-            <a className="footer-nav-link" href="/">Home</a>
+            <a className="footer-nav-link" href="#/">Home</a>
           </li>
           <li>
-            <a className="footer-nav-link" href="/about">About</a>
+            <a className="footer-nav-link" href="#/about">About</a>
           </li>
           <li>
-            <a className="footer-nav-link" href="/services">Services</a>
+            <a className="footer-nav-link" href="#/services">Services</a>
           </li>
           <li>
-            <a className="footer-nav-link" href="/reviews">Reviews</a>
+            <a className="footer-nav-link" href="#/reviews">Reviews</a>
           </li>
           <li>
-            <a className="footer-nav-link" href="/contact">Contact</a>
+            <a className="footer-nav-link" href="#/contact">Contact</a>
           </li>
         </ul>
 
@@ -51,15 +51,15 @@ function Footer() {
           {/* Social Media */}
           <li className="mt-2">
             <div className="flex gap-4">
-              <a className="invert dark:invert-0" aria-label="visit google profile" href="">
+              <a className="invert dark:invert-0" aria-label="visit google profile" href="#/">
                 <img className="" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg" alt="google" width="20" height="20" />
               </a>
 
-              <a className="invert dark:invert-0" aria-label="visit facebook profile" href="">
+              <a className="invert dark:invert-0" aria-label="visit facebook profile" href="#/">
                 <img className="" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="20" height="20" />
               </a>
 
-              <a className="invert dark:invert-0" aria-label="visit instagram profile" href="">
+              <a className="invert dark:invert-0" aria-label="visit instagram profile" href="#/">
                 <img className="" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram"width="20" height="20" />
               </a>
             </div>
@@ -71,7 +71,7 @@ function Footer() {
       <div className="w-auto border-t border-sky-500 dark:border-sky-900 py-4 flex justify-center bg-gray-100 dark:bg-gray-800 mx-8">
         <div>
           <span className="footer-copyright">© Copyright 2023 - </span>
-          <a href="" className="footer-copyright-link text-center">Mariposa Web Services</a>
+          <a href="#/" className="footer-copyright-link text-center">Mariposa Web Services</a>
         </div>
       </div>
     </footer>

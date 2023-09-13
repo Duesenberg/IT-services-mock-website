@@ -77,7 +77,7 @@ function AboutPageAbout () {
               At ITBuddies, we believe that technology should be an enabler, not a hindrance. We are your IT partners, working together to achieve your business objectives. Join us on this exciting digital journey, and together, we'll navigate the ever-evolving IT landscape with confidence and success.
             </p>
 
-            <a href="/contact" 
+            <a href="#/contact" 
             className="relative z-10 button-primary self-start">
               Contact Us</a>
           </div>

@@ -83,7 +83,7 @@ function ContactPageContact() {
               <li className="flex gap-6 items-center w-2/3 max-w-xs md:w-full md:max-w-full">
                   <div className="flex flex-col gap-1 items-start">
                     <span className="uppercase text-start text-lg text-gray-900 dark:text-gray-100 font-bold">Address</span>
-                    <a href="" className="footer-nav-link hover:text-pink-700" target="_blank">Los Angeles, CA</a>
+                    <a href="#/" className="footer-nav-link hover:text-pink-700" target="_blank">Los Angeles, CA</a>
                   </div>
               </li>
 

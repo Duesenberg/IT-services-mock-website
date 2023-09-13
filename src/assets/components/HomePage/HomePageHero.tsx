@@ -10,7 +10,7 @@ function HomePageHero() {
         <p className=" text-gray-900 dark:text-gray-100  text-xl text-center md:max-w-2xl lg:text-2xl">
           We at ITBuddy like to get down to the nitty-gritty of anything IT related. Our team is filled with the most experienced and professional Developers, Designers, SEO Experts and more.
         </p>
-        <a href="/contact" 
+        <a href="#/contact" 
         className="button-primary">
           Contact Us</a>
 
